@@ -145,7 +145,6 @@ Now we're ready to build out our parent component `band_input_component`.
 
 We have our store, our reducer, but no actual way to display or interact with the application. We'll create a new component in `src/components/band_input_component.js` and import it into our `index.js`. The last piece before we start actually building out our component is making sure our `index.js` mounts the `band_input_component` when our application initially loads. `Member how to do this?
 
-![member-berries](https://res.cloudinary.com/teepublic/image/private/s--cJq1pb1m--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1474073671/production/designs/685741_1.jpg)
 
 `ReactDOM.render(<BandInput />, document.getElementById('container'))`
 
@@ -176,7 +175,7 @@ ReactDOM.render(<BandInput store={store}/>, document.getElementById('container')
 
 Now we'll have access to `store` inside our components!
 
-![adventure-time](https://67.media.tumblr.com/8b4632d33e55d71de51bbdbf275d98ad/tumblr_n8bljrS9Fl1rom85wo1_500.gif)
+
 
 When creating a new component there is one question that you should always ask yourself: will this component be class based or just a functional component? In other words will our component hold a lot of logic to change state or will our component simply need to display information from state?
 
